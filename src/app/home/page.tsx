@@ -19,6 +19,7 @@ export default function Home() {
 
 const HomePage = styled.div`
   padding: 50px 20px;
+   background: linear-gradient(135deg, #f7f9fb 0%, #e1f5e6 100%);
 `;
 
 const HeroSection = styled.section`
@@ -32,7 +33,7 @@ const HeroSection = styled.section`
 
 const HeroContent = styled.div`
   max-width: 50%;
-  h1 {
+  h1 { background: #e1f5e6 100%;
     font-size: 3.5rem;
     color: #3ba776;
   }
