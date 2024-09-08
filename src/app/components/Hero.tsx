@@ -1,57 +1,35 @@
-"use client";
+"use client";  // Ensure this is a client-side component
 
-import styled from 'styled-components';
+import Image from 'next/image';
 
 export const Hero = () => (
-  <HeroSection>
-    <HeroContent>
-      <h1>Streamline Your Accounting with Ease</h1>
-      <p>Manage your finances with our efficient and reliable platform.</p>
-      <HeroButton>Get Started</HeroButton>
-    </HeroContent>
-    <HeroImage src="/hero-image.png" alt="Accounting illustration" />
-  </HeroSection>
+  <section className="flex flex-col md:flex-row justify-between items-center bg-gradient-to-r from-primary to-green-300 min-h-screen-minus-navbar px-6 sm:px-12 md:px-16 lg:px-32 py-8 sm:py-12 md:py-20">
+    {/* Text Section */}
+    <div className="max-w-full md:max-w-md lg:max-w-lg text-center md:text-left mt-8 sm:mt-10 md:mt-0 space-y-6 sm:space-y-8 md:space-y-10 lg:space-y-12">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+        Streamline Your Accounting <br /> with Ease
+      </h1>
+      <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-100">
+        Manage your finances efficiently with our easy-to-use platform. Make accounting simpler and more reliable.
+      </p>
+      <button className="mt-4 sm:mt-6 px-8 sm:px-10 md:px-12 py-3 sm:py-4 bg-green-600 text-white text-lg sm:text-xl md:text-2xl font-bold rounded-lg shadow-lg hover:bg-green-700 transition-all duration-300">
+        Get Started
+      </button>
+    </div>
+
+    {/* Image Section */}
+    <div className="relative w-full md:w-1/2 h-auto flex justify-end">
+      <Image
+        src="/hero-image.png"  // Use a string path for images in the /public folder
+        alt="Accounting illustration"
+        sizes="100vw"
+        style={{
+          width: '100%',  // Full width
+          height: 'auto',  // Maintain aspect ratio
+        }}
+        priority  // Ensures the image loads quickly
+        className="rounded-md"
+      />
+    </div>
+  </section>
 );
-
-const HeroSection = styled.section`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px;
-  background: linear-gradient(135deg, #f7f9fb 0%, #e1f5e6 100%);
-  height: 80vh;
-`;
-
-const HeroContent = styled.div`
-  max-width: 50%;
-  h1 {
-    font-size: 3.5rem;
-    color: #3ba776;
-  }
-  p {
-    margin-top: 20px;
-    font-size: 1.25rem;
-    color: #555;
-  }
-`;
-
-const HeroButton = styled.button`
-  margin-top: 30px;
-  padding: 12px 24px;
-  background-color: #3ba776;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-
-  &:hover {
-    background-color: #319961;
-  }
-`;
-
-const HeroImage = styled.img`
-  max-width: 50%;
-  height: auto;
-`;
