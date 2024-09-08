@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply the Helvetica font to the entire project */
+html, body {
+  @apply font-sans bg-gray-50 text-gray-800 leading-relaxed;
+}
+
+/* Ensure headings are styled uniformly */
+h1, h2, h3, h4, h5, h6 {
+  @apply text-gray-900 font-bold;
+}
+
+/* Paragraphs get consistent styling */
+p {
+  @apply text-lg text-gray-600;
+}
+
+/* Buttons get a consistent style */
+button {
+  @apply font-sans bg-primary text-white rounded-lg py-2 px-4 hover:bg-green-600;
+  transition: background-color 0.3s ease;
+}
+
+/* Links should have a consistent look */
+a {
+  @apply text-primary hover:text-green-600;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+/* Image responsiveness */
+img {
+  @apply max-w-full h-auto;
+}
+
+/* Container with max width */
+.container {
+  @apply max-w-screen-xl mx-auto px-4;
+}
+
+/* Utility classes for centering text and adding spacing */
+.centered {
+  @apply text-center;
+}
+
+.muted-text {
+  @apply text-gray-500;
+}
+
+section {
+  @apply py-12;
+}
