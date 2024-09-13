@@ -16,26 +16,24 @@ export const Header = () => {
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/">
-              <a className="text-2xl font-extrabold text-green-600">
-                Accounting
-              </a>
+            <Link href="/" className="text-2xl font-extrabold text-green-600">
+              Accounting
             </Link>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-10">
-            <Link href="/services">
-              <a className="text-gray-700 hover:text-green-600 transition duration-200">Services</a>
+            <Link href="/services" className="text-gray-700 hover:text-green-600 transition duration-200">
+              Services
             </Link>
-            <Link href="/about">
-              <a className="text-gray-700 hover:text-green-600 transition duration-200">About</a>
+            <Link href="/about" className="text-gray-700 hover:text-green-600 transition duration-200">
+              About
             </Link>
-            <Link href="/testimonials">
-              <a className="text-gray-700 hover:text-green-600 transition duration-200">Testimonials</a>
+            <Link href="/testimonials" className="text-gray-700 hover:text-green-600 transition duration-200">
+              Testimonials
             </Link>
-            <Link href="/contact">
-              <a className="text-gray-700 hover:text-green-600 transition duration-200">Contact</a>
+            <Link href="/contact" className="text-gray-700 hover:text-green-600 transition duration-200">
+              Contact
             </Link>
           </div>
 
@@ -76,17 +74,17 @@ export const Header = () => {
         }`}
       >
         <div className="px-4 pb-4 space-y-4">
-          <Link href="/services">
-            <a className="block text-gray-700 hover:text-green-600 transition duration-200">Services</a>
+          <Link href="/services" className="block text-gray-700 hover:text-green-600 transition duration-200">
+            Services
           </Link>
-          <Link href="/about">
-            <a className="block text-gray-700 hover:text-green-600 transition duration-200">About</a>
+          <Link href="/about" className="block text-gray-700 hover:text-green-600 transition duration-200">
+            About
           </Link>
-          <Link href="/testimonials">
-            <a className="block text-gray-700 hover:text-green-600 transition duration-200">Testimonials</a>
+          <Link href="/testimonials" className="block text-gray-700 hover:text-green-600 transition duration-200">
+            Testimonials
           </Link>
-          <Link href="/contact">
-            <a className="block text-gray-700 hover:text-green-600 transition duration-200">Contact</a>
+          <Link href="/contact" className="block text-gray-700 hover:text-green-600 transition duration-200">
+            Contact
           </Link>
         </div>
       </div>

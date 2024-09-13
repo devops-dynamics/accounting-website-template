@@ -22,11 +22,9 @@ export const Hero = () => (
       <Image
         src="/hero-image.png"  // Use a string path for images in the /public folder
         alt="Accounting illustration"
-        sizes="100vw"
-        style={{
-          width: '100%',  // Full width
-          height: 'auto',  // Maintain aspect ratio
-        }}
+        width={800}   // Replace with actual width of the image
+        height={600}  // Replace with actual height of the image
+        layout="responsive"  // Ensures the image is responsive
         priority  // Ensures the image loads quickly
         className="rounded-md"
       />
