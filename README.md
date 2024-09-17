@@ -28,6 +28,7 @@ The project is organized as follows:
 
 ## Installation
 
+#### Local Development 🖥️
 1. Clone the repository:
 ```bash
 git clone https://github.com/your-username/account-ease-web.git
@@ -50,6 +51,31 @@ npm run dev
 
 5. Open your browser and go to:
    http://localhost:3000
+
+#### Docker  🐳
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/account-ease-web.git
+```
+
+2. Navigate to the project directory:
+```bash
+cd account-ease-web
+```
+
+3. Build the image:
+```bash
+docker build -t account-ease-web .
+```
+
+4. Run the container:
+```bash
+docker run -p 3000:3000 account-ease-web
+```
+
+5. Open your browser and go to:
+   http://localhost:3000
+
 
 ## Usage
 
